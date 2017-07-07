@@ -29,52 +29,32 @@ class LoginInteractor: LoginInteractorInputProtocol {
                                                                   kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly,
                                                                   .touchIDAny,
                                                                   nil) {
+            let attributes: NSMutableDictionary = NSMutableDictionary(
+                objects: [kSecClassGenericPassword,
+                          "it.catania.SampleTouchID.authentication",
+                          data,
+                          kSecUseAuthenticationUIAllow,
+                          secAccessControl],
+                forKeys: [kSecClass as! NSCopying,
+                          kSecAttrService as! NSCopying,
+                          kSecValueData as! NSCopying,
+                          kSecUseAuthenticationUI as! NSCopying,
+                          kSecAttrAccessControl as! NSCopying])
             
-//            let query: NSMutableDictionary = NSMutableDictionary(
-//                objects: [  kSecClassGenericPassword,
-//                            "it.catania.SampleTouchID.authentication",
-//                            kCFBooleanTrue,
-//                            kSecMatchLimitOne],
-//                forKeys: [  kSecClass as! NSCopying,
-//                            kSecAttrService as! NSCopying,
-//                            kSecReturnData as! NSCopying,
-//                            kSecMatchLimit as! NSCopying])
             
-            let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
-                                        kSecAttrService as String: "it.catania.SampleTouchID.authentication"
-                                        
+            let delete_query: NSDictionary = [
+                kSecClass: kSecClassGenericPassword,
+                kSecAttrService: "it.catania.SampleTouchID.authentication",
+                kSecReturnData: false
             ]
             
-//            let attributes: NSMutableDictionary = NSMutableDictionary(
-//                objects: [kSecClassGenericPassword,
-//                          "it.catania.SampleTouchID.authentication",
-//                          data,
-//                          kSecUseAuthenticationUIAllow,
-//                          secAccessControl],
-//                forKeys: [kSecClass as! NSCopying,
-//                          kSecAttrService as! NSCopying,
-//                          kSecValueData as! NSCopying,
-//                          kSecUseAuthenticationUI as! NSCopying,
-//                          kSecAttrAccessControl as! NSCopying])
+            let delete_status = SecItemDelete(delete_query)
             
-            let attributesToUpdate: [String: Any] = [kSecValueData as String: data]
+            if delete_status != errSecSuccess && delete_status != errSecItemNotFound  {
+                print("DELETE Error: \(delete_status).")
+            }
             
-            let update_status = SecItemUpdate(query as CFDictionary, attributesToUpdate as CFDictionary)
-            
-            assert(update_status != errSecParam, "parameters must be correct")
-            
-//            let delete_query: NSDictionary = [
-//                kSecClass: kSecClassGenericPassword,
-//                kSecAttrService: "it.catania.SampleTouchID.authentication",
-//                kSecReturnData: false
-//            ]
-//
-//            let delete_status = SecItemDelete(delete_query)
-//            
-//            if delete_status != errSecSuccess && delete_status != errSecItemNotFound  {
-//                print("DELETE Error: \(delete_status).")
-//            }
-//            SecItemAdd(attributes, nil)
+            SecItemAdd(attributes, nil)
         }
     }
 }

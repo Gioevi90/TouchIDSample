@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0B65871F0CCC4E00DBCAD6 /* PasswordCommonInteractorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65811F0CCC4E00DBCAD6 /* PasswordCommonInteractorInteractor.swift */; };
+		AC0B65881F0CCC4E00DBCAD6 /* SensibleDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65821F0CCC4E00DBCAD6 /* SensibleDataPresenter.swift */; };
+		AC0B65891F0CCC4E00DBCAD6 /* SensibleDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65831F0CCC4E00DBCAD6 /* SensibleDataProtocols.swift */; };
+		AC0B658A1F0CCC4E00DBCAD6 /* SensibleDataRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65841F0CCC4E00DBCAD6 /* SensibleDataRouter.swift */; };
+		AC0B658B1F0CCC4E00DBCAD6 /* SensibleDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65851F0CCC4E00DBCAD6 /* SensibleDataViewController.swift */; };
+		AC0B658C1F0CCC4E00DBCAD6 /* SensibleDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC0B65861F0CCC4E00DBCAD6 /* SensibleDataViewController.xib */; };
+		AC0B65961F0CEC4700DBCAD6 /* PasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65901F0CEC4700DBCAD6 /* PasswordPresenter.swift */; };
+		AC0B65971F0CEC4700DBCAD6 /* PasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65911F0CEC4700DBCAD6 /* PasswordProtocols.swift */; };
+		AC0B65981F0CEC4700DBCAD6 /* PasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65921F0CEC4700DBCAD6 /* PasswordRouter.swift */; };
+		AC0B65991F0CEC4700DBCAD6 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B65931F0CEC4700DBCAD6 /* PasswordViewController.swift */; };
+		AC0B659A1F0CEC4700DBCAD6 /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC0B65941F0CEC4700DBCAD6 /* PasswordViewController.xib */; };
+		AC74B1F01F0B9F4800A26FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B1EF1F0B9F4800A26FF2 /* AppDelegate.swift */; };
+		AC74B1F51F0B9F4800A26FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74B1F31F0B9F4800A26FF2 /* Main.storyboard */; };
+		AC74B1F71F0B9F4800A26FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC74B1F61F0B9F4800A26FF2 /* Assets.xcassets */; };
+		AC74B1FA1F0B9F4800A26FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74B1F81F0B9F4800A26FF2 /* LaunchScreen.storyboard */; };
+		AC74B2051F0B9F4800A26FF2 /* SampleTouchIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2041F0B9F4800A26FF2 /* SampleTouchIDTests.swift */; };
+		AC74B2161F0B9FAF00A26FF2 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2101F0B9FAF00A26FF2 /* LoginInteractor.swift */; };
+		AC74B2171F0B9FAF00A26FF2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2111F0B9FAF00A26FF2 /* LoginPresenter.swift */; };
+		AC74B2181F0B9FAF00A26FF2 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2121F0B9FAF00A26FF2 /* LoginProtocols.swift */; };
+		AC74B2191F0B9FB000A26FF2 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2131F0B9FAF00A26FF2 /* LoginRouter.swift */; };
+		AC74B21A1F0B9FB000A26FF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2141F0B9FAF00A26FF2 /* LoginViewController.swift */; };
+		AC74B21B1F0B9FB000A26FF2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC74B2151F0B9FAF00A26FF2 /* LoginViewController.xib */; };
+		AC74B2241F0BEED700A26FF2 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B21E1F0BEED700A26FF2 /* MainInteractor.swift */; };
+		AC74B2251F0BEED700A26FF2 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B21F1F0BEED700A26FF2 /* MainPresenter.swift */; };
+		AC74B2261F0BEED700A26FF2 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2201F0BEED700A26FF2 /* MainProtocols.swift */; };
+		AC74B2271F0BEED700A26FF2 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2211F0BEED700A26FF2 /* MainRouter.swift */; };
+		AC74B2281F0BEED700A26FF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74B2221F0BEED700A26FF2 /* MainViewController.swift */; };
+		AC74B2291F0BEED700A26FF2 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC74B2231F0BEED700A26FF2 /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC74B2011F0B9F4800A26FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC74B1E41F0B9F4800A26FF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC74B1EB1F0B9F4800A26FF2;
+			remoteInfo = SampleTouchID;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC0B65811F0CCC4E00DBCAD6 /* PasswordCommonInteractorInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordCommonInteractorInteractor.swift; path = ../SensibleData/PasswordCommonInteractorInteractor.swift; sourceTree = "<group>"; };
+		AC0B65821F0CCC4E00DBCAD6 /* SensibleDataPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SensibleDataPresenter.swift; path = ../SensibleData/SensibleDataPresenter.swift; sourceTree = "<group>"; };
+		AC0B65831F0CCC4E00DBCAD6 /* SensibleDataProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SensibleDataProtocols.swift; path = ../SensibleData/SensibleDataProtocols.swift; sourceTree = "<group>"; };
+		AC0B65841F0CCC4E00DBCAD6 /* SensibleDataRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SensibleDataRouter.swift; path = ../SensibleData/SensibleDataRouter.swift; sourceTree = "<group>"; };
+		AC0B65851F0CCC4E00DBCAD6 /* SensibleDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SensibleDataViewController.swift; path = ../SensibleData/SensibleDataViewController.swift; sourceTree = "<group>"; };
+		AC0B65861F0CCC4E00DBCAD6 /* SensibleDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SensibleDataViewController.xib; path = ../SensibleData/SensibleDataViewController.xib; sourceTree = "<group>"; };
+		AC0B65901F0CEC4700DBCAD6 /* PasswordPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordPresenter.swift; path = Password/PasswordPresenter.swift; sourceTree = "<group>"; };
+		AC0B65911F0CEC4700DBCAD6 /* PasswordProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordProtocols.swift; path = Password/PasswordProtocols.swift; sourceTree = "<group>"; };
+		AC0B65921F0CEC4700DBCAD6 /* PasswordRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordRouter.swift; path = Password/PasswordRouter.swift; sourceTree = "<group>"; };
+		AC0B65931F0CEC4700DBCAD6 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordViewController.swift; path = Password/PasswordViewController.swift; sourceTree = "<group>"; };
+		AC0B65941F0CEC4700DBCAD6 /* PasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PasswordViewController.xib; path = Password/PasswordViewController.xib; sourceTree = "<group>"; };
+		AC74B1EC1F0B9F4800A26FF2 /* SampleTouchID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTouchID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC74B1EF1F0B9F4800A26FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC74B1F41F0B9F4800A26FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC74B1F61F0B9F4800A26FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC74B1F91F0B9F4800A26FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC74B1FB1F0B9F4800A26FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC74B2001F0B9F4800A26FF2 /* SampleTouchIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTouchIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC74B2041F0B9F4800A26FF2 /* SampleTouchIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTouchIDTests.swift; sourceTree = "<group>"; };
+		AC74B2061F0B9F4800A26FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC74B2101F0B9FAF00A26FF2 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginInteractor.swift; path = Login/LoginInteractor.swift; sourceTree = "<group>"; };
+		AC74B2111F0B9FAF00A26FF2 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = Login/LoginPresenter.swift; sourceTree = "<group>"; };
+		AC74B2121F0B9FAF00A26FF2 /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginProtocols.swift; path = Login/LoginProtocols.swift; sourceTree = "<group>"; };
+		AC74B2131F0B9FAF00A26FF2 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRouter.swift; path = Login/LoginRouter.swift; sourceTree = "<group>"; };
+		AC74B2141F0B9FAF00A26FF2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = "<group>"; };
+		AC74B2151F0B9FAF00A26FF2 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Login/LoginViewController.xib; sourceTree = "<group>"; };
+		AC74B21E1F0BEED700A26FF2 /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainInteractor.swift; path = Main/MainInteractor.swift; sourceTree = "<group>"; };
+		AC74B21F1F0BEED700A26FF2 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainPresenter.swift; path = Main/MainPresenter.swift; sourceTree = "<group>"; };
+		AC74B2201F0BEED700A26FF2 /* MainProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainProtocols.swift; path = Main/MainProtocols.swift; sourceTree = "<group>"; };
+		AC74B2211F0BEED700A26FF2 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainRouter.swift; path = Main/MainRouter.swift; sourceTree = "<group>"; };
+		AC74B2221F0BEED700A26FF2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Main/MainViewController.swift; sourceTree = "<group>"; };
+		AC74B2231F0BEED700A26FF2 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Main/MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC74B1E91F0B9F4800A26FF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC74B1FD1F0B9F4800A26FF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0B658D1F0CCC5600DBCAD6 /* SensibleData */ = {
+			isa = PBXGroup;
+			children = (
+				AC0B65811F0CCC4E00DBCAD6 /* PasswordCommonInteractorInteractor.swift */,
+				AC0B65821F0CCC4E00DBCAD6 /* SensibleDataPresenter.swift */,
+				AC0B65831F0CCC4E00DBCAD6 /* SensibleDataProtocols.swift */,
+				AC0B65841F0CCC4E00DBCAD6 /* SensibleDataRouter.swift */,
+				AC0B65851F0CCC4E00DBCAD6 /* SensibleDataViewController.swift */,
+				AC0B65861F0CCC4E00DBCAD6 /* SensibleDataViewController.xib */,
+			);
+			name = SensibleData;
+			sourceTree = "<group>";
+		};
+		AC0B658E1F0CEC2600DBCAD6 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				AC0B65901F0CEC4700DBCAD6 /* PasswordPresenter.swift */,
+				AC0B65911F0CEC4700DBCAD6 /* PasswordProtocols.swift */,
+				AC0B65921F0CEC4700DBCAD6 /* PasswordRouter.swift */,
+				AC0B65931F0CEC4700DBCAD6 /* PasswordViewController.swift */,
+				AC0B65941F0CEC4700DBCAD6 /* PasswordViewController.xib */,
+			);
+			name = Password;
+			sourceTree = "<group>";
+		};
+		AC74B1E31F0B9F4800A26FF2 = {
+			isa = PBXGroup;
+			children = (
+				AC74B1EE1F0B9F4800A26FF2 /* SampleTouchID */,
+				AC74B2031F0B9F4800A26FF2 /* SampleTouchIDTests */,
+				AC74B1ED1F0B9F4800A26FF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC74B1ED1F0B9F4800A26FF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC74B1EC1F0B9F4800A26FF2 /* SampleTouchID.app */,
+				AC74B2001F0B9F4800A26FF2 /* SampleTouchIDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC74B1EE1F0B9F4800A26FF2 /* SampleTouchID */ = {
+			isa = PBXGroup;
+			children = (
+				AC74B1EF1F0B9F4800A26FF2 /* AppDelegate.swift */,
+				AC74B21C1F0B9FCA00A26FF2 /* Login */,
+				AC74B21D1F0BEEB500A26FF2 /* Main View */,
+				AC0B658D1F0CCC5600DBCAD6 /* SensibleData */,
+				AC0B658E1F0CEC2600DBCAD6 /* Password */,
+				AC74B1F31F0B9F4800A26FF2 /* Main.storyboard */,
+				AC74B1F61F0B9F4800A26FF2 /* Assets.xcassets */,
+				AC74B1F81F0B9F4800A26FF2 /* LaunchScreen.storyboard */,
+				AC74B1FB1F0B9F4800A26FF2 /* Info.plist */,
+			);
+			path = SampleTouchID;
+			sourceTree = "<group>";
+		};
+		AC74B2031F0B9F4800A26FF2 /* SampleTouchIDTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC74B2041F0B9F4800A26FF2 /* SampleTouchIDTests.swift */,
+				AC74B2061F0B9F4800A26FF2 /* Info.plist */,
+			);
+			path = SampleTouchIDTests;
+			sourceTree = "<group>";
+		};
+		AC74B21C1F0B9FCA00A26FF2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AC74B2101F0B9FAF00A26FF2 /* LoginInteractor.swift */,
+				AC74B2111F0B9FAF00A26FF2 /* LoginPresenter.swift */,
+				AC74B2121F0B9FAF00A26FF2 /* LoginProtocols.swift */,
+				AC74B2131F0B9FAF00A26FF2 /* LoginRouter.swift */,
+				AC74B2141F0B9FAF00A26FF2 /* LoginViewController.swift */,
+				AC74B2151F0B9FAF00A26FF2 /* LoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		AC74B21D1F0BEEB500A26FF2 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				AC74B21E1F0BEED700A26FF2 /* MainInteractor.swift */,
+				AC74B21F1F0BEED700A26FF2 /* MainPresenter.swift */,
+				AC74B2201F0BEED700A26FF2 /* MainProtocols.swift */,
+				AC74B2211F0BEED700A26FF2 /* MainRouter.swift */,
+				AC74B2221F0BEED700A26FF2 /* MainViewController.swift */,
+				AC74B2231F0BEED700A26FF2 /* MainViewController.xib */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC74B1EB1F0B9F4800A26FF2 /* SampleTouchID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC74B2091F0B9F4800A26FF2 /* Build configuration list for PBXNativeTarget "SampleTouchID" */;
+			buildPhases = (
+				AC74B1E81F0B9F4800A26FF2 /* Sources */,
+				AC74B1E91F0B9F4800A26FF2 /* Frameworks */,
+				AC74B1EA1F0B9F4800A26FF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleTouchID;
+			productName = SampleTouchID;
+			productReference = AC74B1EC1F0B9F4800A26FF2 /* SampleTouchID.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC74B1FF1F0B9F4800A26FF2 /* SampleTouchIDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC74B20C1F0B9F4800A26FF2 /* Build configuration list for PBXNativeTarget "SampleTouchIDTests" */;
+			buildPhases = (
+				AC74B1FC1F0B9F4800A26FF2 /* Sources */,
+				AC74B1FD1F0B9F4800A26FF2 /* Frameworks */,
+				AC74B1FE1F0B9F4800A26FF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC74B2021F0B9F4800A26FF2 /* PBXTargetDependency */,
+			);
+			name = SampleTouchIDTests;
+			productName = SampleTouchIDTests;
+			productReference = AC74B2001F0B9F4800A26FF2 /* SampleTouchIDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC74B1E41F0B9F4800A26FF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Giovanni Catania";
+				TargetAttributes = {
+					AC74B1EB1F0B9F4800A26FF2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3QV48QCY4W;
+						ProvisioningStyle = Automatic;
+					};
+					AC74B1FF1F0B9F4800A26FF2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3QV48QCY4W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC74B1EB1F0B9F4800A26FF2;
+					};
+				};
+			};
+			buildConfigurationList = AC74B1E71F0B9F4800A26FF2 /* Build configuration list for PBXProject "SampleTouchID" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC74B1E31F0B9F4800A26FF2;
+			productRefGroup = AC74B1ED1F0B9F4800A26FF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC74B1EB1F0B9F4800A26FF2 /* SampleTouchID */,
+				AC74B1FF1F0B9F4800A26FF2 /* SampleTouchIDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC74B1EA1F0B9F4800A26FF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC74B21B1F0B9FB000A26FF2 /* LoginViewController.xib in Resources */,
+				AC0B658C1F0CCC4E00DBCAD6 /* SensibleDataViewController.xib in Resources */,
+				AC74B1FA1F0B9F4800A26FF2 /* LaunchScreen.storyboard in Resources */,
+				AC74B2291F0BEED700A26FF2 /* MainViewController.xib in Resources */,
+				AC74B1F71F0B9F4800A26FF2 /* Assets.xcassets in Resources */,
+				AC74B1F51F0B9F4800A26FF2 /* Main.storyboard in Resources */,
+				AC0B659A1F0CEC4700DBCAD6 /* PasswordViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC74B1FE1F0B9F4800A26FF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC74B1E81F0B9F4800A26FF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC74B21A1F0B9FB000A26FF2 /* LoginViewController.swift in Sources */,
+				AC74B2171F0B9FAF00A26FF2 /* LoginPresenter.swift in Sources */,
+				AC74B2181F0B9FAF00A26FF2 /* LoginProtocols.swift in Sources */,
+				AC0B65991F0CEC4700DBCAD6 /* PasswordViewController.swift in Sources */,
+				AC0B658A1F0CCC4E00DBCAD6 /* SensibleDataRouter.swift in Sources */,
+				AC0B658B1F0CCC4E00DBCAD6 /* SensibleDataViewController.swift in Sources */,
+				AC74B2281F0BEED700A26FF2 /* MainViewController.swift in Sources */,
+				AC74B2191F0B9FB000A26FF2 /* LoginRouter.swift in Sources */,
+				AC74B2251F0BEED700A26FF2 /* MainPresenter.swift in Sources */,
+				AC0B65891F0CCC4E00DBCAD6 /* SensibleDataProtocols.swift in Sources */,
+				AC0B65981F0CEC4700DBCAD6 /* PasswordRouter.swift in Sources */,
+				AC0B65871F0CCC4E00DBCAD6 /* PasswordCommonInteractorInteractor.swift in Sources */,
+				AC74B1F01F0B9F4800A26FF2 /* AppDelegate.swift in Sources */,
+				AC74B2161F0B9FAF00A26FF2 /* LoginInteractor.swift in Sources */,
+				AC74B2261F0BEED700A26FF2 /* MainProtocols.swift in Sources */,
+				AC0B65971F0CEC4700DBCAD6 /* PasswordProtocols.swift in Sources */,
+				AC74B2271F0BEED700A26FF2 /* MainRouter.swift in Sources */,
+				AC74B2241F0BEED700A26FF2 /* MainInteractor.swift in Sources */,
+				AC0B65961F0CEC4700DBCAD6 /* PasswordPresenter.swift in Sources */,
+				AC0B65881F0CCC4E00DBCAD6 /* SensibleDataPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC74B1FC1F0B9F4800A26FF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC74B2051F0B9F4800A26FF2 /* SampleTouchIDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC74B2021F0B9F4800A26FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC74B1EB1F0B9F4800A26FF2 /* SampleTouchID */;
+			targetProxy = AC74B2011F0B9F4800A26FF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC74B1F31F0B9F4800A26FF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC74B1F41F0B9F4800A26FF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC74B1F81F0B9F4800A26FF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC74B1F91F0B9F4800A26FF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC74B2071F0B9F4800A26FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC74B2081F0B9F4800A26FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC74B20A1F0B9F4800A26FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3QV48QCY4W;
+				INFOPLIST_FILE = SampleTouchID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.catania.SampleTouchID;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AC74B20B1F0B9F4800A26FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3QV48QCY4W;
+				INFOPLIST_FILE = SampleTouchID/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.catania.SampleTouchID;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AC74B20D1F0B9F4800A26FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3QV48QCY4W;
+				INFOPLIST_FILE = SampleTouchIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.catania.SampleTouchIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleTouchID.app/SampleTouchID";
+			};
+			name = Debug;
+		};
+		AC74B20E1F0B9F4800A26FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3QV48QCY4W;
+				INFOPLIST_FILE = SampleTouchIDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.catania.SampleTouchIDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleTouchID.app/SampleTouchID";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC74B1E71F0B9F4800A26FF2 /* Build configuration list for PBXProject "SampleTouchID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC74B2071F0B9F4800A26FF2 /* Debug */,
+				AC74B2081F0B9F4800A26FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC74B2091F0B9F4800A26FF2 /* Build configuration list for PBXNativeTarget "SampleTouchID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC74B20A1F0B9F4800A26FF2 /* Debug */,
+				AC74B20B1F0B9F4800A26FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC74B20C1F0B9F4800A26FF2 /* Build configuration list for PBXNativeTarget "SampleTouchIDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC74B20D1F0B9F4800A26FF2 /* Debug */,
+				AC74B20E1F0B9F4800A26FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC74B1E41F0B9F4800A26FF2 /* Project object */;
+}
